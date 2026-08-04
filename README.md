@@ -51,7 +51,7 @@ Link to the detection (If applicable)
 After processing, Tines immediately sends the incident details to Slack and email. This is to make sure that the security analyst is notified instantly through different forms of communication as soon as a threat is detected.	Next, Tines will prompt the analyst with a question asking “Isolate?”. If the analyst says “No” a message will be sent to Slack saying “The computer was not isolated. Please investigate.” If “Yes” was chosen then LimaCharlie will isolate the machine and send a message to the Slack channel stating the isolation status as well as the computer name.
 
 
-# Phase 1 - Project Setup:
+# Phase 1 - Environment Setup:
 
 Virtual Machine Configuration: 
 
@@ -93,7 +93,7 @@ Vultr was chosen for its ability to provide:
 Additionally, hosting the endpoint within the cloud environment allows the project to mimic the environment in which many modern organizations manage their remote systems.
 
 
-# Phase 2 - Endpoint Preparation    
+# Phase 2 - Attack Simulation   
 
 After creating the Windows Virtual Machine, the next step was to make sure the endpoint is prepared for detection testing. I created an installation key to install the LimaCharlie sensor. This enables endpoint monitoring and ensures response capabilities. LaZagne was also installed to simulate malicious credential access activity.    
 
@@ -146,7 +146,7 @@ LaZagne was used to simulate the techniques associated with credential access in
 
 <img width="1252" height="676" alt="The Lalagne Project" src="https://github.com/user-attachments/assets/e9db199c-33ba-466e-b958-018e71fa6906" />
 
-# Phase 3 - Detection Rule
+# Phase 3 - Detection Engineering
 
 The objective of this phase was to create the LimaCharlie detection rule that would identify the execution of LaZagne on the Windows endpoint and initiate the SOAR workflow automatically.
 
