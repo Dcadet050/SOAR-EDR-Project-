@@ -1,0 +1,12 @@
+metadata:
+  author: Dcadet
+  description: Detects execution of LaZagne credential dumping tool.
+  falsepositives:
+    - Administrative testing
+  level: medium
+  tags:
+    - attack.credential_access
+    - attack.t1003
+
+events:
+...
