@@ -1,0 +1,45 @@
+## Commands Used
+
+```powershell
+.\LaZagne.exe all
+```
+
+```powershell
+ping google.com -t
+```
+
+```powershell
+Ctrl + C
+```
+
+```http
+POST /v1/<oid>/sensor/<sid>/isolation
+```
+
+```http
+GET /v1/<oid>/sensor/<sid>
+```
+
+```yaml
+FILE_PATH ends with "LaZagne.exe"
+```
+
+```yaml
+COMMAND_LINE ends with "all"
+```
+
+```yaml
+COMMAND_LINE contains "lazagne"
+```
+
+```yaml
+TARGET = windows
+```
+
+```yaml
+EVENT = NEW_PROCESS
+```
+
+```yaml
+EVENT = EXISTING_PROCESS
+```
